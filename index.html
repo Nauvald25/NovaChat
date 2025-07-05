@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NovaChat WhatsApp Admin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="profile">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.981PYHrhUab5bM7YvzfqFgHaHU?pid=Api&P=0&h=180" class="avatar" alt="Foto Admin" />
+    <div class="info">
+      <h3>NovaChat</h3>
+      <span id="status">Online</span>
+    </div>
+  </div>
+  <div class="icons">
+    <button type="button" onclick="callNumber()" aria-label="Telpon">📞</button>
+    <button type="button" onclick="videoCall()" aria-label="Video Call">🎥</button>
+  </div>
+</header>
+
+<main class="chat-box" id="chat-box">
+  </main>
+
+<div id="typing-status" class="typing-status" style="display:none;">
+  Sedang mengetik...
+</div>
+
+<button id="scroll-to-bottom-btn" aria-label="Gulir ke Bawah">⬇️</button>
+
+<div class="input-wrapper">
+  <div class="input-area">
+    <input type="text" id="chat-message" placeholder="Ketik pesan...">
+    <button class="emoji-button" onclick="toggleEmojiMenu()">😊</button>
+    <button class="quick-reply-toggle-button" onclick="toggleQuickReplyMenu()">💬</button>
+    <button class="attach-button" onclick="toggleAttachMenu()">📎</button>
+    <button id="send-btn">➡️</button>
+    <button onclick="clearAllChat()" aria-label="Hapus Semua">🗑️</button>
+  </div>
+  <input type="text" id="wa-number" placeholder="Nomor tujuan (contoh: 62812xxxx)" autocomplete="off">
+</div>
+
+<div class="attach-menu" id="attach-menu">
+  <button onclick="openCamera()">📷 Kamera</button>
+  <button onclick="openGallery()">🖼 Galeri</button>
+  <button onclick="openVideo()">🎬 Video</button>
+  <button onclick="getLocation()">📍 Lokasi</button>
+  <button onclick="openDocument()">📄 Dokumen</button>
+</div>
+
+<div class="emoji-menu" id="emoji-menu">
+  <button onclick="insertEmoji('😀')">😀</button>
+  <button onclick="insertEmoji('😊')">😊</button>
+  <button onclick="insertEmoji('😂')">😂</button>
+  <button onclick="insertEmoji('👍')">👍</button>
+  <button onclick="insertEmoji('❤️')">❤️</button>
+  <button onclick="insertEmoji('🤩')">🤩</button>
+  <button onclick="insertEmoji('🥳')">🥳</button>
+  <button onclick="insertEmoji('😭')">😭</button>
+  <button onclick="insertEmoji('🤔')">🤔</button>
+  <button onclick="insertEmoji('💯')">💯</button>
+</div>
+
+<div class="quick-reply-menu" id="quick-reply-menu">
+  <button onclick="insertQuickReply('Halo, ada yang bisa dibantu?')">Halo, ada yang bisa dibantu?</button>
+  <button onclick="insertQuickReply('Terima kasih atas pesan Anda.')">Terima kasih atas pesan Anda.</button>
+  <button onclick="insertQuickReply('Mohon tunggu sebentar.')">Mohon tunggu sebentar.</button>
+  <button onclick="insertQuickReply('Bagaimana kabar Anda?')">Bagaimana kabar Anda?</button>
+  <button onclick="insertQuickReply('Baik, siap!')">Baik, siap!</button>
+</div>
+
+<input type="file" id="cameraInput" accept="image/*" capture="environment" style="display:none;">
+<input type="file" id="galleryInput" accept="image/*" style="display:none;">
+<input type="file" id="docInput" accept=".pdf,.doc,.docx,.xls,.xlsx" style="display:none;">
+<input type="file" id="videoInput" accept="video/*" style="display:none;">
+
+<audio id="notify-sound" src="notify.mp3" preload="auto"></audio>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
