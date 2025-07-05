@@ -1,17 +1,14 @@
-🚀 NovaChat - Pengalaman Chat Web Real-time Anda
-(Ganti placeholder di atas dengan screenshot actual dari aplikasi NovaChat Anda untuk daya tarik visual yang maksimal!)
-
-✨ Tentang NovaChat
+ Tentang NovaChat
 NovaChat adalah aplikasi chat berbasis web yang dirancang untuk memberikan pengalaman komunikasi yang mulus dan intuitif, terinspirasi oleh antarmuka modern aplikasi pesan instan populer. Dengan fokus pada fitur real-time dan kemudahan penggunaan, NovaChat memungkinkan Anda untuk berinteraksi, berbagi, dan tetap terhubung secara efisien.
 
 Aplikasi ini dimulai sebagai simulasi client-side dan kini telah ditingkatkan dengan integrasi backend Node.js dan Socket.IO untuk kapabilitas komunikasi real-time yang sesungguhnya!
 
 🌟 Fitur Unggulan
-NovaChat dikemas dengan berbagai fitur yang meningkatkan pengalaman chat Anda:
+NovaChat dikemas dengan berbagai fitur yang meningkatkan pengalaman chat Anda
 
-Pesan Real-time: Kirim dan terima pesan secara instan berkat integrasi backend Socket.IO.
+Pesan Real-time: Kirim dan terima pesan secara instan berkat integrasi backend Socket.IO
 
-Integrasi WhatsApp: Cepat terhubung dan kirim pesan via wa.me langsung dari aplikasi.
+Integrasi WhatsApp: Cepat terhubung dan kirim pesan via wa.me langsung dari aplikasi
 
 Riwayat Chat Persisten: Pesan Anda disimpan secara lokal di browser, sehingga percakapan Anda tidak hilang saat Anda menutup tab.
 
