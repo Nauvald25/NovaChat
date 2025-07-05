@@ -1,7 +1,7 @@
 {
-  "name": "onlinechatconnect-main",
+  "name": "NovaChat",
   "version": "1.0.0",
-  "description": "Jual Script website: OnlineChatConnect – Solusi Chat Langsung untuk Website Anda",
+  "description": "NovaChat WhatsApp",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
