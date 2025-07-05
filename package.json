@@ -1,7 +1,7 @@
 {
-  "name": "NovaChat WhatsApp",
+  "name": "novachat-main",
   "version": "1.0.0",
-  "description": "NovaChat WhatsApp",
+  "description": "NovaChat",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
