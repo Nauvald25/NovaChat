@@ -1,44 +1,66 @@
-Aplikasi NovaChat Adalah Sebuah Prototipe Antarmuka Chat Berbasis Web Yang Dirancang Untuk Mensimulasikan Pengalaman Pengguna Seperti Aplikasi Instan Populer (Misalnya WhatsApp).
-Aplikasi Ini Memungkinkan Pengguna Untuk Mengirim Pesan Berbagai Bagai Jenis Media, Dan Berinteraksi Dengan Sistem Balasan Otomatis, Sambil Menyimpan Riwayat Percakapan Secara Lokal
+ Tentang NovaChat
+NovaChat adalah aplikasi chat berbasis web yang dirancang untuk memberikan pengalaman komunikasi yang mulus dan intuitif, terinspirasi oleh antarmuka modern aplikasi pesan instan populer. Dengan fokus pada fitur real-time dan kemudahan penggunaan, NovaChat memungkinkan Anda untuk berinteraksi, berbagi, dan tetap terhubung secara efisien.
 
-# Fungsi Utama Aplikasi
+Aplikasi ini dimulai sebagai simulasi client-side dan kini telah ditingkatkan dengan integrasi backend Node.js dan Socket.IO untuk kapabilitas komunikasi real-time yang sesungguhnya!
 
-1. Antarmuka Chat Interaktif: Menampilkan Riwayat Percakapan Dengan Pesan Yang Dikirim Oleh Pengguna(User) Dan Diterima Dari Admin(Sistem)
+🌟 Fitur Unggulan
+NovaChat dikemas dengan berbagai fitur yang meningkatkan pengalaman chat Anda
 
-2. Input Nomor WhatsApp: Memungkinkan Pengguna Untuk Memasukkan Nommor Tujuan WhatsApp Yang Akan Digunakan Untuk Mengirim Pesan Eksternal Via No Tujuan
+Pesan Real-time: Kirim dan terima pesan secara instan berkat integrasi backend Socket.IO
 
-3. Pengirman Pesan Teks: Mengirim Pesan Teks Yang Akan Ditampilkan Dichat Dan Secara Bersamaan Membuka Tab WhatsApp Baru Dengan Pesan Yang Sudah Terisi
+Integrasi WhatsApp: Cepat terhubung dan kirim pesan via wa.me langsung dari aplikasi
 
-4. Balasan Otomatis Cerdas(Admin): Sistem Dapat Memberikan Balasan Otomatis Bedasarkan Waktu (Pagi , Siang, Sore Dan Juga Malam) Kata Kunci Tertentu Dalam Pesan Pengguna('Halo, Bagaimana Apakah Tersedia Dll')
+Riwayat Chat Persisten: Pesan Anda disimpan secara lokal di browser, sehingga percakapan Anda tidak hilang saat Anda menutup tab.
 
-5. Penyimpanan Riwayat Chat Lokasi Lokal: Semua Pesan Yang Akan Dikirm Dan Diterima Disimpan LocalStorage Browser,Sehingga Riwayat Chat Tidak Hilang Saat Halaman Ditutup Dan Dibuka Kembali
+Pemisah Tanggal Otomatis: Riwayat chat diatur dengan cerdas berdasarkan tanggal, memudahkan navigasi.
 
-# Fitur Fitur Unggulan
+Tombol "Gulir ke Bawah": Kembali ke pesan terbaru dengan sekali klik di chat yang panjang.
 
-⭐ Pemisah Tanggal Otomatis: Pesan Dalam Riwayat Chat Secara Otomatis Dipisahkan Bedasarkan Tanggal ("Hari Ini, "Kemarin", Atau Tanggal Lengkap),Membuat Navigasi Riwayat Lebih Mudah
+Status Pesan (✓ Terkirim, ✓✓ Diterima): Dapatkan umpan balik visual tentang status pengiriman pesan Anda.
 
-⭐ Tombol"Gulir Ke Bawah": Sebuah Tombol Melayang Muncul Saat Pengguna Menggulir Ke Atas, Memungkinkan Mereka Untuk Dengan Cepat Kembali Ke Pesan Terbaru Dibagian Bawah Chat
+Hapus Pesan: Kendalikan riwayat Anda dengan kemampuan menghapus pesan yang Anda kirim.
 
-⭐ Hapus Pesan: Pengguna Dapat Menghapus Pesan Yang Mereka Kirim Sendiri Dengan Mengarakan Kursor Ke Pesan Tersebut(Muncul Tombol Hapus)
+Menu Lampiran Lengkap: Bagikan berbagai jenis media dengan mudah:
 
-Menu Lampiran (Attach Menu):
+📷 Kamera & Galeri: Kirim gambar dengan pratinjau langsung.
 
-Kamera & Galeri: Mengizinkan simulasi pengiriman gambar (dari kamera atau galeri) dengan pratinjau langsung di chat
+🎬 Video: Berbagi klip video.
 
-Video: Mengizinkan simulasi pengiriman video dengan pratinjau langsung di chat
+📄 Dokumen: Kirim file penting (PDF, DOCX, XLS).
 
-Dokumen: Mengizinkan simulasi pengiriman file dokumen (PDF, DOCX, XLS, dll.)
+📍 Lokasi: Bagikan lokasi Anda melalui tautan Google Maps.
 
-Lokasi: Mendapatkan dan berbagi lokasi geografis pengguna (membutuhkan HTTPS) dengan tautan Google Maps
+Ekspresi Komunikasi:
 
-Setiap file yang dilampirkan juga mensimulasikan status pengiriman (centang satu dan dua)
+😂 Menu Emoji: Tambahkan emosi ke pesan Anda dengan berbagai emoji.
 
-⭐ Menu Emoji: Memungkinkan Pengguna Untuk Menyisipkan Emoji Dengan Mudah Ke Dalam Kolam Pesan
+💬 Balas Cepat (Quick Reply): Kirim respons standar dengan cepat dan mudah.
 
-⭐ Menu Balas Cepat: Menyediakan Daftar Respons Cepat Atau Pesan Instan Yang Dapat Disisipkan Ke Kolom Pesan Untuk Mempermudah Komunikasi
+Panggilan Langsung:
 
-⭐ Indikator Mengetik: Menampilkan Pesan "Sedang Mengetik...."Saat Pengguna Sedang Mengetik Di Kolom Pesan
+📞 Panggilan Telepon: Inisiasi panggilan telepon langsung ke nomor yang dituju.
 
-⭐ Suara Notifikasi: Memainkan Suara Singkat Saat Ada Pesan Baru Masuk (Simulasi)
+🎥 Video Call (via WA): Buka chat WhatsApp untuk memulai panggilan video.
 
-⭐ Clear Chat: Opsi Menghapus Seluruh Riwayat Percakapan
+Indikator Mengetik: Tampilan "Sedang mengetik..." untuk interaksi yang lebih hidup.
+
+Notifikasi Suara: Dapatkan pemberitahuan audio untuk pesan baru yang masuk.
+
+Bersihkan Chat: Opsi untuk menghapus seluruh riwayat percakapan.
+
+🛠️ Teknologi yang Digunakan
+Frontend:
+
+HTML5
+
+CSS3
+
+JavaScript (Vanilla JS)
+
+Backend:
+
+Node.js
+
+Express.js (untuk menyajikan file statis)
+
+Socket.IO (untuk komunikasi real-time)
